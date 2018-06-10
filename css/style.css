@@ -1,0 +1,472 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  height: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-top:10px;
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  top: 30%;
+  left: 27%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.innerImg {
+  width: 80%;
+  height: 80%;
+  z-index: 200;
+}
+
+
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 3rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+
+
+/* SHADOW PART CSS
+-------------------------------------------------- */
+.shadow_container {
+  position: relative;
+  /* Full height (make the image visble in div)*/
+  height: 100%;   
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;   /* responsive image and solve the problem of whitespace */
+  overflow: hidden;
+	
+  
+
+}
+.quarter_container {   
+  width:50%;
+  height: 50%;
+  float:left;
+
+
+  
+ }
+
+ .textOnShadow {
+  position: absolute;
+  color:#FFF;
+ z-index: 1;
+  width: 40%;
+  height: 32%;
+  margin-left: -10px;
+  border: 1px solid rgb(255, 255, 255, 0.38);
+  border-left: 0;
+  cursor: pointer;
+ }
+ 
+ .quarter_container:hover .quarter_img_1 {
+  -webkit-filter: blur(0px);
+ 
+  -moz-filter: blur(0px);
+
+  -o-filter: blur(0px);
+
+  -ms-filter: blur(0px);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false);
+}
+
+ .quarter_container:hover .quarter_img_2 {
+  -webkit-filter: blur(0px);
+ 
+  -moz-filter: blur(0px);
+
+  -o-filter: blur(0px);
+
+  -ms-filter: blur(0px);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false);
+}
+
+ .quarter_container:hover .quarter_img_3 {
+  -webkit-filter: blur(0px);
+ 
+  -moz-filter: blur(0px);
+
+  -o-filter: blur(0px);
+
+  -ms-filter: blur(0px);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false);
+}
+
+ .quarter_container:hover .quarter_img_4 {
+  -webkit-filter: blur(0px);
+ 
+  -moz-filter: blur(0px);
+
+  -o-filter: blur(0px);
+
+  -ms-filter: blur(0px);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false);
+}
+
+.quarter_container:hover .textOnShadow p {
+	opacity: 0.7;
+}
+
+.quarter_container:hover .textOnShadow h1 {
+	opacity: 0.7;
+}
+
+
+
+
+
+ .textOnShadow h1 {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 27px;
+   margin-left: -20px;
+ }
+
+ .textOnShadow p {
+   padding-top: 10px;
+ }
+
+
+ .textOnShadow.title_1 {
+  padding-top: 13px;
+  top:9%;
+  left:7%;
+ }
+
+ .textOnShadow.title_2 {
+  padding-top: 13px;
+  top:9%;
+  left:58%;
+ }
+
+ .textOnShadow.title_3 {
+  padding-top: 13px;
+  top:60%;
+  left:7%;
+ }
+
+ .textOnShadow.title_4 {
+  padding-top: 13px;
+  top:60%;
+  left:58%;
+ }
+
+
+ .quarter_img_1 {
+  background-image: url('../img/mainpart1.jpg');
+  /* Full height (make the image visble in div)*/
+  width: 100%;
+  height: 100%;   
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;   /* responsive image and solve the problem of whitespace */
+  z-index: -1;
+  overflow: hidden;
+  
+  /* IMPLEMENT SHADOW */  
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);
+  
+ 
+ }
+ 
+ .quarter_img_2 {
+  background-image: url('../img/mainpart2.jpg');
+  /* Full height (make the image visble in div)*/
+  width: 100%;  
+  height: 100%;
+  background-position: center;
+  background-size: cover;   /* responsive image and solve the problem of whitespace */
+  z-index: 1;
+  overflow: hidden;
+  
+    /* IMPLEMENT SHADOW */  
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);
+}
+ .quarter_img_3 {
+   background-image: url('../img/mainpart3.jpg');
+  /* Full height (make the image visble in div)*/
+  width: 100%; 
+  height: 100%;
+  background-position: center;
+  background-size: cover;   /* responsive image and solve the problem of whitespace */
+  z-index: 1;
+  overflow: hidden;
+  
+    /* IMPLEMENT SHADOW */  
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);
+}
+ .quarter_img_4 {
+  background-image: url('../img/mainpart4.jpg');
+  /* Full height (make the image visble in div)*/
+  width: 100%;  
+  height: 100%;
+  background-position: center;
+  background-size: cover;   /* responsive image and solve the problem of whitespace */
+  z-index: 1;
+  overflow: hidden;
+  
+    /* IMPLEMENT SHADOW */  
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);
+}
+
+
+
+.privateBroadcast {
+   /* The image used */
+   background-image: url('../img/mainpart1-1.jpg');
+
+   /* Full height (make the image visble in div)*/
+   height: 100%;   
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;   /* responsive image and solve the problem of whitespace */
+   overflow: hidden;
+   z-index: 1;
+}
+
+.pb_content {
+  position: relative;
+  width: 40%;
+  top: 50%;
+  left:40%;
+}
+
+.pb_content h1 {
+  font-size: 30px;
+}
+
+.friendSoc {
+   /* The image used */
+   background-image: url('../img/mainpart2-1.jpg');
+
+   /* Full height (make the image visble in div)*/
+   height: 100%;   
+
+     /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;   /* responsive image and solve the problem of whitespace */
+   overflow: hidden;
+   z-index: 1;
+}
+
+.fs_content {
+  position: relative;
+  width: 40%;
+  top: 52%;
+  left: 21%;
+}
+
+.fs_content h1 {
+  font-size: 30px;
+}
+
+.roadConditions {
+   /* The image used */
+   background-image: url('../img/mainpart3-1.jpg');
+
+   /* Full height (make the image visble in div)*/
+   height: 100%;   
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;   /* responsive image and solve the problem of whitespace */
+   overflow: hidden;
+   z-index: 1;
+}
+
+.rc_content {
+  position: relative;
+  width: 40%;
+  top: 50%;
+  left:40%;
+}
+
+.rc_content h1 {
+  font-size: 30px;
+}
+
+.photowall {
+   /* The image used */
+   background-image: url('../img/mainpart4-1.jpg');
+
+   /* Full height (make the image visble in div)*/
+   height: 100%;   
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;   /* responsive image and solve the problem of whitespace */
+   overflow: hidden;
+   z-index: 1;
+}
+
+.pw_content {
+  position: relative;
+  width: 40%;
+  top: 52%;
+  left: 21%;
+}
+
+.pw_content h1 {
+  font-size: 30px;
+}
+
+.contactUs {
+  /* The image used */
+  background-image: url('../img/contact.jpg');
+
+  /* Full height (make the image visble in div)*/
+  height: 100%;   
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   /* responsive image and solve the problem of whitespace */
+  overflow: hidden;
+  z-index: 1;
+  display: block;
+}
+
+.cu_content {
+  position: relative;
+  width: 70%;
+  top: 30%;
+  left: 10%;
+  color: white;
+}
+
+.cu_content h1 {
+  font-size: 30px;
+}
+
+.container p {
+  text-align: center;
+}
+.nav-item:hover {
+  background-color:rgb(13,148,138);
+  transition: 0.6s;
+}
+
+.nav-item:hover font {
+  color: white;
+  transition: 0.2s;
+}
+
+.nav-item {
+  padding-left: 1px;
+}
+
+.navbar-brand:hover img {
+  width: 100.5%;
+}
+
+#animation_1 {
+  animation-delay: 0.4s;
+}
+
+#animation_2 {
+  animation-delay: 0.8s;
+}
+
+#animation_3 {
+  animation-delay: 1.2s;
+}
+
+#animation_4 {
+  animation-delay: 1.6s;  
+}
+
+@media screen and (max-width: 768px) {
+  .pb_content, .rc_content {
+    width: 60%;
+    top:54%;
+    left: 34%;
+    
+  }
+  .fs_content, .pw_content {
+    width: 60%;
+    top: 52%;
+    left: 8%; 
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pb_content p, .fs_content p, .rc_content p, .pw_content p {
+    font-size: 14px;
+  }
+  .pb_content h1, .fs_content h1, .rc_content h1,.pw_content h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .textOnShadow p {
+    font-size: 10px;
+  }
+  .textOnShadow h1 {
+    font-size: 18px;
+	margin-left: -10px;
+  }
+   .pb_content p, .fs_content p, .rc_content p, .pw_content p {
+    font-size: 10px;
+  }
+  .pb_content h1, .fs_content h1, .rc_content h1,.pw_content h1 {
+    font-size: 15px;
+  }
+}
